@@ -186,7 +186,7 @@ function changeSettings () {
     document.getElementById("htmlQuestion").innerHTML = questionText;
 }
 
-//SETUP FOR HTML
+
 resetSettings();
 setProblem();
 document.getElementById("htmlQuestion").innerHTML = questionText;
@@ -198,3 +198,5 @@ input.addEventListener("keyup", function(event) {
     confirmGenProblem();
   }
 });
+
+
