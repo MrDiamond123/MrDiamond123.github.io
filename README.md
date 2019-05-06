@@ -1,0 +1,2 @@
+# MrDiamond123.github.io
+THE NEW PAGE THAT IS GOOD I HOPE 
