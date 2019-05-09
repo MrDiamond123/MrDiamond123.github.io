@@ -22,7 +22,7 @@ function makePolygon() {
 }
 
 function changePolygon() {
-    numberOfSides = polygonSides.value();
+    numberOfSides = polygonSides.value;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     makePolygon();
 }
