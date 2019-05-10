@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 var polygonSides = document.getElementById('polygonSides');
 
 var numberOfSides = 6,
-    size = 50,
+    size = 25,
     Xcenter = 25,
     Ycenter = 25;
 
