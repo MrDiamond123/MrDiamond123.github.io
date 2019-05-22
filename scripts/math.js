@@ -107,7 +107,7 @@ function displayCorrectStreak() {
 
 
 function confirmGenProblem() {
-    userAnswer = input.value;
+    userAnswer = Number(input.value);
  if (confirmAnswer()) {
      //Reset The Problem
      setProblem();
@@ -178,8 +178,8 @@ function resetSettings () {
 }
 
 function changeSettings () {
-    max = document.getElementById("maxProblem").value;
-    min = document.getElementById("minProblem").value;
+    max = Number(document.getElementById("maxProblem").value);
+    min = Number(document.getElementById("minProblem").value);
     correctStreak = 0;
     amountRight = 0;
     setProblem();
