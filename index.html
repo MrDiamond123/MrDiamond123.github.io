@@ -13,6 +13,7 @@
   $( function() {
     $( "#tabs" ).tabs({ collapsible: true, event: "mouseover", active: false });
   });
+      $("#tabs").mouseleave(function() { $( "#tabs" ).tabs( "option", "active", 1 ); });
     </script>
     
     <title>DiamondWeb - Homepage</title>
