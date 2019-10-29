@@ -11,9 +11,8 @@
     <script src="http://code.jquery.com/color/jquery.color.plus-names-2.1.2.js"></script>
     <script>
   $( function() {
-    $( "#tabs" ).tabs({ collapsible: true, event: "mouseover", active: false });
+    $( "#tabs" ).tabs({ collapsible: true, event: "mouseclick", active: false });
   });
-      $("#tabs").mouseleave(function() { $( "#tabs" ).tabs( "option", "active", 1 ); });
     </script>
     
     <title>DiamondWeb - Homepage</title>
@@ -27,12 +26,10 @@
         <li><a href="#tabs-3">IDK</a></li>
       </ul>
       <div id="tabs-1">
-        <p><strong>Click this tab again to close the content pane.</strong></p>
-        <p>A simple math problem generator, which keeps track of how many you get right!</p>
+        <p><a href="math">A simple math problem generator, which keeps track of how many you get right!</a></p>
       </div>
       <div id="tabs-2">
-        <p><strong>Click this tab again to close the content pane.</strong></p>
-        <p>A bunch of random "programs", if you can even call them that, I made in JavaScript.</p>
+        <p><a href="">A bunch of random "programs", if you can even call them that, I made in JavaScript.</a></p>
       </div>
       <div id="tabs-3">
         <p><strong>Click this tab again to close the content pane.</strong></p>
