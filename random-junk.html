@@ -30,7 +30,7 @@
                var number = Math.floor(Math.random() * 10);
                function guess(lastmessage) {
                var gnumber = prompt(lastmessage);
-               if (gnumber = number) {
+               if (gnumber == number) {
                 alert('You guessed it!');
                }
                if (gnumber > number) {
@@ -39,7 +39,7 @@
                if (gnumber < number) {
                 guess('Too low!');
                }
-               } 
+               }
                guess('Guess the number (1-10)');
                ">Guess the Number</a>
     </div>
