@@ -16,11 +16,14 @@
             color: lightslategray;
         }
 
-        .navbar li {
-            display: inline;
-        }
-        .navbar ul {
-            list-style: none;
+        .navbar {
+                & ul {
+                list-style: none;
+            
+                & li {
+                    display: inline;
+                }
+            }
         }
         
     </style>
