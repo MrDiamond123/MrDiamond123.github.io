@@ -11,22 +11,32 @@
     <style>
         * {
             font-family: 'IBM Plex Mono', monospace;
+            text-align: center;
+            
         }
         .secondary {
             color: lightslategray;
         }
 
         .navbar {
-                & ul {
+            background-color: whitesmoke;
+            border-radius: 12.5px;
+            text-align: center;
+            margin: auto;
+            width: max-content;
+            & ul {
                 list-style: none;
-            
-                & li {
-                    display: inline;
+                display: inline-flex;
+                gap: 1em;
+                padding: .25em .25em .125em .125em;
+                & a {
+                    text-decoration: none;
                 }
-            }
+            } 
         }
-        
+  
     </style>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -34,18 +44,28 @@
         <p class="secondary">he/they</p>
         <nav class="navbar">
             <ul>
-                <li><a href="https://www.linkedin.com/in/kurtis-o-donnell-48a279251/"><i data-feather="linkedin"></i>LinkedIn</a></li>
-                <li><a href="mailto:odonnell.kurtis05@gmail.com"><i data-feather="mail"></i>Email</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kurtis-o-donnell-48a279251/">
+                        <div data-feather="linkedin" class="icon"></div>
+                        <div class="text">LinkedIn</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:odonnell.kurtis05@gmail.com">
+                        <div data-feather="mail" class="icon"></div>
+                        <div class="text">Email</div>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <h2>About Me</h2>
+    <!-- <h2>About Me</h2>
     <ul>
         <li></li>
         <li></li>
         <li></li>
     </ul>
-    <h2>Certificates</h2>
+    <h2>Certificates</h2> -->
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
