@@ -1,41 +1,12 @@
 <!DOCTYPE html>
+<!-- hello! welcome to the code of my website, sorry if its bad :P -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurtis O'Donnell</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-    </style>
-    <style>
-        * {
-            font-family: 'IBM Plex Mono', monospace;
-            text-align: center;
-            
-        }
-        .secondary {
-            color: lightslategray;
-        }
-
-        .navbar {
-            background-color: whitesmoke;
-            border-radius: 12.5px;
-            text-align: center;
-            margin: auto;
-            width: max-content;
-            & ul {
-                list-style: none;
-                display: inline-flex;
-                gap: 1em;
-                padding: .25em .25em .125em .125em;
-                & a {
-                    text-decoration: none;
-                }
-            } 
-        }
-  
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -45,6 +16,18 @@
         <p class="secondary">Holly, MI</p>
         <nav class="navbar">
             <ul>
+                <li>
+                    <a href="https://www.facebook.com/kurtis.odonnell.376/">
+                        <div data-feather="facebook" class="icon"></div>
+                        <div class="text">Facebook</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/diamondmcpro/">
+                        <div data-feather="instagram" class="icon"></div>
+                        <div class="text">Instagram</div>
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.linkedin.com/in/kurtis-o-donnell-48a279251/">
                         <div data-feather="linkedin" class="icon"></div>
@@ -60,17 +43,70 @@
             </ul>
         </nav>
     </header>
-    <!-- <h2>About Me</h2>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <h2>Certificates</h2> -->
+    <main>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Hi! I am Kurtis! I am <i id="age"></i>!
+                 I am currently a student studying business and marketing. 
+                 I am passionate about marketing, technology, and trying to make the world a better place!
+            </p>
+        </section>
+        <section id="hobbies">
+            <h2>
+                Hobbies and Interests
+            </h2>
+            <ul>
+                <li>Technology of all sorts</li>
+                <li>Video Games</li>
+                <li>Mechanical Keyboards</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    Oakland Community College
+                    <ul>
+                        <li>Associates in Business Administration  <i>(in progress)</i></li>
+                        <li>2022 - 2025</li>
+                    </ul>
+                </li>
+                <li>
+                    Oakland Schools Technical Campus - NW
+                    <ul>
+                        <li>Advanced Marketing and Enterpnership <i>(in progress)</i></li>
+                        <li>2022 - 2024</li>
+                    </ul>
+                </li>
+                <li>
+                    Holly High School
+                    <ul>
+                        <li>2022 - 2025 (doing Early College)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="certs">
+            <h2>Certifications</h2>
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </section>
+    
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace();
+        dayjs.extend(window.dayjs_plugin_relativeTime);
+        const ageString = `${dayjs().from(dayjs('2005-09-12'), true)} old`
+        document.getElementById('age').innerHTML = ageString;
     </script>
 </body>
 </html>
