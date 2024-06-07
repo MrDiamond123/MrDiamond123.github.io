@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-body {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 125%;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+body {
+    font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(209, 232, 252);
 }
 .secondary {
