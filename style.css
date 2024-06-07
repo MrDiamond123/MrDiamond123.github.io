@@ -4,6 +4,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(209, 232, 252);
+    font-size: 125%;
 }
 .secondary {
     color: #4c5762;
