@@ -51,7 +51,7 @@
     <main>
         <section id="aboutme">
             <h2>About Me</h2>
-            <p>Hi! I am Kurtis! I am <i id="age"></i>!
+            <p>Hi! I am Kurtis! I am <i id="age">18 years old</i>!
                  I am currently a student studying business and marketing. 
                  I am passionate about marketing, technology, and trying to make the world a better place!
             </p>
@@ -136,11 +136,5 @@
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
 
     <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace();
-        dayjs.extend(window.dayjs_plugin_relativeTime);
-        const ageString = `${dayjs().from(dayjs('2005-09-12'), true)} old`
-        document.getElementById('age').innerHTML = ageString;
-    </script>
 </body>
 </html>
